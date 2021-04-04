@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col form-inline">
-                <b-form-input v-model="newTask" placeholder="Enter Task" @keyup.enter="add"></b-form-input> <b-button class="ml-2" variant="primary" @click="add">Add</b-button>
+                <b-form-input v-model="newTask" placeholder="Enter Task" @keyup.enter="add"></b-form-input> <b-button class="ml-2" variant="primary" @click="addNewTask">Add</b-button>
             </div>
         </div>
 
@@ -101,7 +101,7 @@ export default {
         }
     },
     methods: {
-        add() {
+        addNewTask() {
             if (this.newTask) {
                 if (this.arrayToDo.length < this.maxToDo) {
                     this.arrayToDo.push({name: this.newTask});
