@@ -13,8 +13,6 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-import "./assets/css/tailwind.css"
-
 new Vue({
   render: h => h(App),
 }).$mount('#app')
